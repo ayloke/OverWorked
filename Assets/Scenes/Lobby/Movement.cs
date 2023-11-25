@@ -35,14 +35,14 @@ public class Movement : MonoBehaviour
         {
             rb.AddForce(0, 0, -forwardForse * Time.deltaTime, ForceMode.VelocityChange);
         }
-        //Ускорение (работает, но не правильно)
+        //Ускорение (работает, но не так как я хочу)
         //if (Input.GetKey("v"))//ускорение
         //{
-        //    forwardForse = 2500;//как вставить сюда формулу 
+        //    forwardForse = 2500;//как вставить сюда формулу типо forwardForse*2
         //}
         //else
         //{
-         //   forwardForse = 500;//как присвоить сюда значение которое впсиал в unity
+        //   forwardForse = 500;//как присвоить сюда значение которое впсиал в unity
         //}
 
     }
