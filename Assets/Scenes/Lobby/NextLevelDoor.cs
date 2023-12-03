@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour
+public class NextLevelDoor : MonoBehaviour
 {
+    //запуск другой сцены
     public void OnTriggerEnter ()
     {
         SceneManager.LoadScene("Floor1");
