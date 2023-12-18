@@ -21,13 +21,14 @@ public class EnemyDie : MonoBehaviour
             Die();
         }
     }
-    void Die ()
+     void Die ()
     {
         Debug.Log("Enemy died!");
         this.enabled = false;   
-        GetComponent<Collider>().enabled = false;
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<NavMeshAgent>().enabled = false;
-        GetComponent<Enemy>().enabled = false;
+        Destroy(gameObject);
+        //GetComponent<Collider>().enabled = false;
+        //GetComponent<MeshRenderer>().enabled = false;
+        //GetComponent<NavMeshAgent>().enabled = false;
+        //GetComponent<Enemy>().enabled = false;
     }
 }
