@@ -25,19 +25,19 @@ public class Player : MonoBehaviour
         }
     }
     void OnCollisionEnter(Collision collisionInfo)
-    {
+    {//неу€звимость после получени€ урона
         if (Time.time >= nextDamageTime)
         {
             if (collisionInfo.collider.tag == "Enemy")
             { 
                 Debug.Log("hit");
-                //currentHealth --;
+               
                 TakeDamage(enemyDamage);
                 nextDamageTime = Time.time + 1f / damageRate;
             }
         }
     }
-    //Ќе работает неу€звиость после получени€ урона
+    
     void NewGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
