@@ -8,6 +8,6 @@ public class NextLevelDoor : MonoBehaviour
     //запуск другой сцены
     public void OnTriggerEnter ()
     {
-        SceneManager.LoadScene("Floor1");
+        SceneManager.LoadScene("Demo");
     }
 }

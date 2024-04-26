@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()//Эта функция вызывается с частотой фиксированных кадров (fixed framerate), если MonoBehaviour включен.
+    void FixedUpdate()
     {
 
         if (Input.GetKey("d"))//движение вправо
