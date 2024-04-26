@@ -8,6 +8,7 @@ public class SpawnZone : MonoBehaviour
 {
     public GameObject[] obj;
     public string listenToTag = "Player";
+    public string enemyTag = "Enemy";
     //public float distance1 = 1.5f;
     //public float distance2 = 1.5f;
     public Transform Point;
@@ -29,5 +30,21 @@ public class SpawnZone : MonoBehaviour
         int random = Random.Range(0, obj.Length - 1);
         Instantiate(obj[random], Point.position, Quaternion.identity);
         //* Random.Range(distance1,distance2)
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag(enemyTag))
+        {
+           
+        }
+        else
+        {
+            Finish();
+        }
+    }
+    public void Finish()
+    {
+        Debug.Log("Trigger deleate");
+        Destroy(gameObject);
     }
 }

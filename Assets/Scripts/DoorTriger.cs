@@ -5,13 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class DoorTriger : MonoBehaviour
 {
-    public void OnTriggerEnter()
+    public GameObject FakeDoor;
+    public string listenToTag = "Player";
+    public void OnTriggerEnter(Collider other)
     {
-       GetComponent<MeshRenderer>().enabled = false;
-          
+        if (other.CompareTag(listenToTag))
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+            //FakeDoor.GetComponent<MeshRenderer>().enabled = false;
+            FakeDoor.GetComponent<BoxCollider>().enabled = false;
+        }
     }
-    public void OnTriggerExit()
+    public void OnTriggerExit(Collider other)
     {
-       GetComponent<MeshRenderer>().enabled = true;
+        if (other.CompareTag(listenToTag))
+        {
+            GetComponent<MeshRenderer>().enabled = true;
+            //FakeDoor.GetComponent<MeshRenderer>().enabled = true;
+            FakeDoor.GetComponent<BoxCollider>().enabled = true;
+        }
     }
 }
