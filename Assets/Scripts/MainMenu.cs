@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Игра смогла запустить себя");
-        SceneManager.LoadScene("Lobby");
+        SceneManager.LoadScene("Demo");
     }
 
     //выход из игры

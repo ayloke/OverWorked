@@ -22,7 +22,6 @@ public class SpawnZone : MonoBehaviour
     }
 
 
-
     public void Spawn()
     {
 
@@ -31,16 +30,13 @@ public class SpawnZone : MonoBehaviour
         Instantiate(obj[random], Point.position, Quaternion.identity);
         //* Random.Range(distance1,distance2)
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag(enemyTag))
+        if (other.CompareTag(listenToTag))
         {
-           
+           Finish();
         }
-        else
-        {
-            Finish();
-        }
+       
     }
     public void Finish()
     {
