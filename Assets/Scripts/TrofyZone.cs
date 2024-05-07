@@ -21,4 +21,11 @@ public class TrofyZone : MonoBehaviour
         int random = Random.Range(0, obj.Length - 1);
         Instantiate(obj[random], Point.position, Quaternion.identity);
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(listenToTag))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

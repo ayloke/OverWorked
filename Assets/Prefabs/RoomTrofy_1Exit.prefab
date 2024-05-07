@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3524676528239211923, guid: 576940afe5aae62439b585a06fa67029, type: 3}
       propertyPath: m_Name
-      value: RoomTrofy Variant
+      value: RoomTrofy_1Exit
       objectReference: {fileID: 0}
     - target: {fileID: 4867823602673427302, guid: 576940afe5aae62439b585a06fa67029, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58,6 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8279398287033027795, guid: 576940afe5aae62439b585a06fa67029, type: 3}
+    - {fileID: 8867903143072852150, guid: 576940afe5aae62439b585a06fa67029, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8340021136475154339, guid: 576940afe5aae62439b585a06fa67029, type: 3}
     - {fileID: 5316397801681566579, guid: 576940afe5aae62439b585a06fa67029, type: 3}
@@ -101,6 +102,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj:
   - {fileID: 4707738220788191945, guid: 3625528385af5054db64ff6ab9b67081, type: 3}
+  - {fileID: 5164349017703011160, guid: f62409f196ea4534eb478e9b5d5ecda3, type: 3}
+  - {fileID: 4284799717355569555, guid: 7c240de7692e71044b68eb5d5df2a323, type: 3}
+  - {fileID: 672174730257038448, guid: 4347186003ed1504cbfb591f322546a9, type: 3}
   listenToTag: Player
   Point: {fileID: 1513357268265249564}
 --- !u!4 &7070422407338735474 stripped

@@ -12,13 +12,16 @@ public class Player : MonoBehaviour
     public int enemyDamage = 20;
     public float damageRate = 2f;
     float nextDamageTime = 0;
+    public HealthBar healthBar;
     private void Start()
     {
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
     void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
             NewGame();
@@ -43,7 +46,7 @@ public class Player : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         this.enabled = false;
         Destroy(gameObject);
-        //SceneManager.LoadScene("lobby"); Надо потом включить чтобы отправлять игрокав лобби
+        //SceneManager.LoadScene("lobby"); Надо потом включить чтобы отправлять игрока в лобби
         Debug.Log("Player Die");
     }
 }

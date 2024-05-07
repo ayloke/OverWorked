@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1259036325926232455, guid: a16a0cfe58b097f4aafcfe2f5e99168f, type: 3}
       propertyPath: m_Name
-      value: RoomTrofy Variant
+      value: RoomTrofy_2Exit
       objectReference: {fileID: 0}
     - target: {fileID: 7070422407338735474, guid: a16a0cfe58b097f4aafcfe2f5e99168f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52,7 +52,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6522279414625139874, guid: a16a0cfe58b097f4aafcfe2f5e99168f, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5250107374987246405, guid: a16a0cfe58b097f4aafcfe2f5e99168f, type: 3}
     m_AddedGameObjects:

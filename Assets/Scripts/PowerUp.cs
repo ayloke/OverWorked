@@ -7,7 +7,7 @@ public class PowerUp : MonoBehaviour
 {
     public GameObject pickupEffect;
     public int currentHpUp = 100;
-    public int enemyDamage = 3;//деление
+    public int enemyDamage = 1;//деление
     public int attackDamage = 5;//умножение
     public int attackRate = 1;// умножение 
     private void OnTriggerEnter(Collider other)
@@ -23,7 +23,7 @@ public class PowerUp : MonoBehaviour
         //Instantiate(pickupEffect, transform.position, transform.rotation);
 
         Player stats = player.GetComponent<Player>();
-        stats.currentHealth = currentHpUp;
+        stats.currentHealth += currentHpUp;
         stats.enemyDamage /= enemyDamage;
         
         Debug.Log("Power Up picked up");
