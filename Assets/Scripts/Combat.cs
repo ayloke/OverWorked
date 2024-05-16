@@ -34,7 +34,7 @@ public class Combat : MonoBehaviour
             enemy.GetComponent<EnemyDie>().TakeDamage(attackDamage);
         }
     }
-    void OnDrawGizmosSelected()
+ void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
             return;

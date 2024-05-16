@@ -43,10 +43,10 @@ public class Player : MonoBehaviour
     
     void NewGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         this.enabled = false;
         Destroy(gameObject);
-        //SceneManager.LoadScene("lobby"); Надо потом включить чтобы отправлять игрока в лобби
+        SceneManager.LoadScene("Mainmenu");
         Debug.Log("Player Die");
     }
 }
