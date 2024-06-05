@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -43,7 +41,6 @@ public class Player : MonoBehaviour
     
     void NewGame()
     {
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         this.enabled = false;
         Destroy(gameObject);
         SceneManager.LoadScene("Mainmenu");

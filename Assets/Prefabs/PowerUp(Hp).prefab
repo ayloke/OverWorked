@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f907ac735d14b1d488f4ecf3067765df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupEffect: {fileID: 1382417715410880438, guid: ed19b6a184de7074fb9d832d9ed54a32, type: 3}
+  pickupEffect: {fileID: 0}
   currentHpUp: 10
   enemyDamage: 1
   attackDamage: 1

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3513458909360939708, guid: 40a3dc34ccba8bb45bff3e4081ebaba1, type: 3}
       propertyPath: m_Name
-      value: Room_4 Variant
+      value: Room_2Exit
       objectReference: {fileID: 0}
     - target: {fileID: 4874444169594385481, guid: 40a3dc34ccba8bb45bff3e4081ebaba1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52,6 +52,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8272600159438625788, guid: 40a3dc34ccba8bb45bff3e4081ebaba1, type: 3}
+      propertyPath: obj.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272600159438625788, guid: 40a3dc34ccba8bb45bff3e4081ebaba1, type: 3}
+      propertyPath: obj.Array.data[1]
+      value: 
+      objectReference: {fileID: 5666783611574873543, guid: c9558b48ea37b1b40a8dae76540060c5, type: 3}
+    - target: {fileID: 8272600159438625788, guid: 40a3dc34ccba8bb45bff3e4081ebaba1, type: 3}
+      propertyPath: obj.Array.data[2]
+      value: 
+      objectReference: {fileID: 6032621993106252889, guid: e0b0be67788387d4e9b261ef15ace8c1, type: 3}
+    - target: {fileID: 8272600159438625788, guid: 40a3dc34ccba8bb45bff3e4081ebaba1, type: 3}
+      propertyPath: obj.Array.data[3]
+      value: 
+      objectReference: {fileID: 1222881880070939870, guid: 66be2dcd64d64844bb48454e009ecf1b, type: 3}
+    - target: {fileID: 8272600159438625788, guid: 40a3dc34ccba8bb45bff3e4081ebaba1, type: 3}
+      propertyPath: obj.Array.data[4]
+      value: 
+      objectReference: {fileID: 1778873354789220477, guid: 90d8cc20e47b96c479b48f1b46576cda, type: 3}
+    - target: {fileID: 8272600159438625788, guid: 40a3dc34ccba8bb45bff3e4081ebaba1, type: 3}
+      propertyPath: obj.Array.data[5]
+      value: 
+      objectReference: {fileID: 2747210837100983801, guid: 8ecfd325326ba23499930519dd1eb39e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6466479772201810784, guid: 40a3dc34ccba8bb45bff3e4081ebaba1, type: 3}

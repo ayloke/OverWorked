@@ -40,7 +40,14 @@ public class SpawnZone : MonoBehaviour
     }
     public void Finish()
     {
-        Debug.Log("Trigger deleate");
+        Debug.Log("Trigger delete");
         Destroy(gameObject);
     }
+    //public void DoorLock()
+    //{
+      //if (GameObject.FindWithTag ("Enemy") = true)
+        //{
+
+        //}
+    //}
 }

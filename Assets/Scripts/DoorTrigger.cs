@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DoorTriger : MonoBehaviour
+public class DoorTrigger : MonoBehaviour
 {
     public GameObject FakeDoor;
     public string listenToTag = "Player";

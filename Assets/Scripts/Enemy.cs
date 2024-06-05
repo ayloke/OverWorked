@@ -15,8 +15,8 @@ public class Enemy : MonoBehaviour
     public float walkPointRange;
 
     //атака
-    public float timeBetweenAttacks;
-    bool alreadyAttacked;
+   // public float timeBetweenAttacks;
+   // bool alreadyAttacked;
 
     //состояния
     public float sightRange, attackRange;
@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();  
+       // if (playerInAttackRange && playerInSightRange) AttackPlayer();  
     }
     private void Patroling()
     {
@@ -58,18 +58,18 @@ public class Enemy : MonoBehaviour
     {
         agent.SetDestination(player.position);
     }
-    private void AttackPlayer()
-    {
-        agent.SetDestination(transform.position);
-        transform.LookAt(player);
-        if (!alreadyAttacked)
-        {
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
-    }
-    private void ResetAttack()
-    {
-        alreadyAttacked= false;
-    }
+    //private void AttackPlayer()
+   // {
+    //    agent.SetDestination(transform.position);
+    //    transform.LookAt(player);
+     //   if (!alreadyAttacked)
+     //   {
+      //      alreadyAttacked = true;
+          //  Invoke(nameof(ResetAttack), timeBetweenAttacks);
+      //  }
+   // }
+   // private void ResetAttack()
+   // {
+   //     alreadyAttacked = false;
+    //}
 }
